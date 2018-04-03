@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.rkt": "racket",
+        "*.scm": "scheme",
+        "pt-sem.h": "c",
+        "vector": "cpp",
+        "xstring": "cpp"
+    },
+    "C_Cpp.intelliSenseEngineFallback": "Enabled"
+}
