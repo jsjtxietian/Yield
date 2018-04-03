@@ -51,13 +51,16 @@ void schedule_test()
     int id1 = uthread_create(s, func3, &s);
     int id2 = uthread_create(s, func2, &s);
 
+    printf("=============");
+
     while (!schedule_finished(s))
     {
+        uthread_resume(s, id1);        
         uthread_resume(s, id2);
-        uthread_resume(s, id1);
     }
     puts("main over");
 }
+
 int main()
 {
 
